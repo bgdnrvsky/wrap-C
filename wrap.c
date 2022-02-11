@@ -90,6 +90,10 @@ int main(int argc, char** argv) {
 
     if (exit_status == 0) // Successful compilation
         printf("\x1b[32;49;1;3mSuccessful compilation\n");
+    else {
+        toRun = 0;
+        toDelete = 0;
+    }
 
     printf("\x1b[0m");
 
