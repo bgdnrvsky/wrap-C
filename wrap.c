@@ -101,7 +101,8 @@ int main(int argc, char** argv) {
         strcpy(command, "");
         strcat(command, "./");
         strcat(command, fileName);
-        printf("\n");
+        printf("\x1b[35;3;1mRunning \"\x1b[37m%s\x1b[35;3;1m\"\x1b[0m\x1b[31m.\x1b[32m.\x1b[34m.\n", fullName);
+        printf("\x1b[0m\n");
         system(command);
     }
 
